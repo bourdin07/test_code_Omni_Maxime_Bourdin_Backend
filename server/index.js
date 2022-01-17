@@ -74,7 +74,7 @@ app.get("/api/", async (req, res) => {
 
         if (response.data[0].continents.includes("Asia")
         || response.data[0].continents.includes("Europe")) {
-          modifiedEmplyee["additionalID"] = `${employee.firstName.toLowerCase()}${employee.lastName.toLowerCase()}${employee.dateOfBirth.replace("/", "")}`;
+          modifiedEmplyee["additionalID"] = `${employee.firstName.toLowerCase()}${employee.lastName.toLowerCase()}${employee.dateOfBirth.replaceAll("/", "")}`;
         }
 
         responseApi.push(modifiedEmplyee);

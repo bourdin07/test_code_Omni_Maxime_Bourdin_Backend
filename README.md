@@ -8,6 +8,7 @@ Run the command `npm install`
 
 The project uses Javascript ES6
 
+- The server uses Express and run on the port 3001
 - I created an async function `asyncForEach` in order to iterate over the array list of employees
 - When the we navigate to the route "/api/", I call the function `await asyncForEach`
 - For each iteration I make an API request with Axios with the method GET
